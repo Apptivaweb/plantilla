@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+    <img src="img/header.png" class="d-none d-sm-block img-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="#">LOGO</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                  <span class="input-group-text" id="basic-addon2">@</span>
+                </div>
+            </div>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">a</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">a</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">a</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</nav>
+    
+    
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+            <div class="position-absolute w-100" style="z-index: 1;">
+                <a href="#" data-dismiss="modal" class="close mr-2"><span aria-hidden="true">&times;</span></a>
+            </div>
+            <div class="position-relative">
+                <a href="#">
+                    <img class="d-none d-sm-block img-fluid" src="img/modal_escritorio.png">
+                    <img class="d-block d-sm-none img-fluid mx-auto" src="img/modal_movil.png">
+                </a>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
+<style>
+.modal-content{  border:none; border-radius: 0;}
+.modal-body{ padding: 0;border-bottom:0 }
+@media (max-width: 768px) {}
+</style>
+<script>
+$('#exampleModal').modal('show')
+</script>
+</body>
+</html>
