@@ -10,61 +10,64 @@
     <script src="js/bootstrap.min.js"></script>
 </head>
 <body class="bg-light">
+
+<div class="fixed-top">
     <div class="bg-dark">
-        <img src="img/header.png" class="d-none d-sm-block img-fluid mx-auto">
+            <img src="img/header.png" class="d-none d-sm-block img-fluid mx-auto">
     </div>
-<!-- menu de navegación -->
-<div class="bg-dark">
-    <nav class="container">
-        <div id="_categorias" class="text-white text-center">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list m-2 m-sm-0" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-            </svg><br>
-            <span class="d-none d-sm-block">Categorias</span>
-        </div>
-        <div id="_logo">
-            <a class="nav-link" href="#"> 
-                <img class="d-none d-sm-block" src="img/logo_100x40.png">
-                <img class="d-block d-sm-none" src="img/logo_40x40.png">
-            </a>
-        </div>
-        <div id="_buscador" class="w-75">
-            <!-- buscador-->
-            <div class="input-group">
-                <input type="text" class="form-control" placeholder="Buscar productos" aria-label="Buscar productos" aria-describedby="basic-addon2">
-                <div class="input-group-append">
-                    <span class="input-group-text bg-warning" id="basic-addon2"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search text-white" viewBox="0 0 16 16">
-                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/></svg>
-                    </span>
-                </div>
+    <!-- menu de navegación -->
+    <div class="bg-dark">
+        <nav class="container">
+            <div id="_categorias" class="text-white text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list m-2 m-sm-0" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                </svg><br>
+                <span class="d-none d-sm-block">Categorias</span>
             </div>
-            <!-- buscador /-->
-        </div>
-        <div id="_delivery">
-            <a class="nav-link text-white" href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-truck" viewBox="0 0 16 16">
-                    <path d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5v-7zm1.294 7.456A1.999 1.999 0 0 1 4.732 11h5.536a2.01 2.01 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456zM12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12v4zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
-                </svg>
-            </a>
-        </div>
-        <div id="_user">
-            <a class="nav-link text-white" href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-                </svg>
-            </a>
-        </div>
-        <div id="_cart">
-            <a class="nav-link text-white" href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
-                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-                </svg>
-            </a>
-        </div>
-    </nav>
+            <div id="_logo">
+                <a class="nav-link" href="#"> 
+                    <img class="d-none d-sm-block" src="img/logo_100x40.png">
+                    <img class="d-block d-sm-none" src="img/logo_40x40.png">
+                </a>
+            </div>
+            <div id="_buscador" class="w-75">
+                <!-- buscador-->
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Buscar productos" aria-label="Buscar productos" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                        <span class="input-group-text bg-warning" id="basic-addon2"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search text-white" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/></svg>
+                        </span>
+                    </div>
+                </div>
+                <!-- buscador /-->
+            </div>
+            <div id="_delivery">
+                <a class="nav-link text-white" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-truck" viewBox="0 0 16 16">
+                        <path d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5v-7zm1.294 7.456A1.999 1.999 0 0 1 4.732 11h5.536a2.01 2.01 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456zM12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12v4zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+                    </svg>
+                </a>
+            </div>
+            <div id="_user">
+                <a class="nav-link text-white" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                    </svg>
+                </a>
+            </div>
+            <div id="_cart">
+                <a class="nav-link text-white" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                    </svg>
+                </a>
+            </div>
+        </nav>
+    </div>
+    <!-- menu de navegación /-->
 </div>
-<!-- menu de navegación /-->
 
 <!-- CARRITO FLOTANTE-->
 <div class="container-fluid position-absolute" id="flotante_carrito" style="z-index: 3;">
@@ -148,7 +151,7 @@
 <!-- CARRITO FLOTANTE /-->
 
 <!-- CONTENIDO-->
-<div class="container-fluid">
+<div class="container" id="micontainer">
     <div class="row justify-content-center">
         <!-- direccion-->
         <div class="col-sm-8 text-center bg-white p-2 m-2">
@@ -225,7 +228,7 @@
 
         <!-- productos -->
         <div class="col-sm-8 col-12" id="productos">
-            <div class="row">
+            <div class="row p-2">
 
                 <!-- item 1-->
                 <div class="col-sm-3 col-6  pr-1 pl-1 mt-4">
@@ -648,6 +651,7 @@
 <!-- notificacion bottom/ -->
 
 <style>
+#micontainer{ max-width: 1300px;}
 nav{ display: flex; align-items: center; justify-content: space-between; }
 .font-line-through{ text-decoration: line-through;}
 .modal-content{  border:none; border-radius: 0;}
