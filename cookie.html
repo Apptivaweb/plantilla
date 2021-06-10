@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ee">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cookie</title>
+   
+</head>
+<body>
+    <form action="#" method="get">
+        <input type="tel" placeholder="Teléfono:" id="txt_telefono">
+        <input type="button" value="ENVIAR" id="btn_enviar">
+    </form>
+
+<script>
+// funciones adm de una cookie
+function setCookie(name,value,days) {
+    var expires = "";
+    if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + (days*24*60*60*1000)); 
+        expires = "; expires=" + date.toUTCString();
+    }
+    document.cookie = name + "=" + (value || "")  + expires + "; path=/";
+}
+
+function getCookie(name) {
+    var nameEQ = name + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0;i < ca.length;i++) {
+        var c = ca[i];
+        while (c.charAt(0)==' ') c = c.substring(1,c.length);
+        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+    }
+    return null;
+}
+function eraseCookie(name) {   
+    document.cookie = name +'=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+}
+
+
+// crear una cookie
+let txt_telefono = document.getElementById("txt_telefono")
+document.getElementById("btn_enviar").addEventListener("click",e=>{
+    if( getCookie('telefono') == null ){
+        setCookie('telefono',txt_telefono,365); // nombre, valor, tiempo = dias
+    }
+})
+
+// llenar input con el valor de la cookie 
+if( getCookie('telefono') != null ){
+    txt_telefono.value = getCookie('telefono')
+}
+           
+</script>
+</body>
+</html>
